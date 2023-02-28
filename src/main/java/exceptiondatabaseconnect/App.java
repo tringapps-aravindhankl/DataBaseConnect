@@ -17,7 +17,6 @@ public class App
         log.info("Enter Password");
         String password=scan.nextLine();
         Database s2=Database.s1(url, username, password);
-        System.out.println(s2);
         int option = 0;
 		while(option<3)
         {
