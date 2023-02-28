@@ -9,7 +9,7 @@ class Database{
 	String password;
 	Connection con;
 	Logger log=Logger.getLogger("hi");
-	static Database Firstobject=null;
+	static Database firstobject=null;
 	
 	private Database(String url,String username,String password) {
 		this.url=url;
@@ -18,10 +18,10 @@ class Database{
 	}
 	
 	public static Database s1(String url,String username,String password){
-		if(Firstobject==null) {
-		Firstobject=new Database(url,username,password);
+		if(firstobject==null) {
+		firstobject=new Database(url,username,password);
 		}
-		return Firstobject;
+		return firstobject;
 	}
 	void connect() 
 	{
